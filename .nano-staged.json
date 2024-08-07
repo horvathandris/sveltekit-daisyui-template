@@ -1,0 +1,3 @@
+{
+	"*.{json,ts,tsx,js,jsx,svelte,css,html}": "pnpm format"
+}
