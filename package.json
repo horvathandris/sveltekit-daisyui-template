@@ -1,38 +1,56 @@
 {
-	"name": "ulbl",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write . && eslint . --fix",
-		"prepare": "husky",
-		"postinstall": "pnpm exec husky install"
-	},
-	"devDependencies": {
-		"@eslint/js": "^9.8.0",
-		"@sveltejs/adapter-auto": "^3.2.2",
-		"@sveltejs/kit": "^2.5.20",
-		"@sveltejs/vite-plugin-svelte": "^3.1.1",
-		"@typescript-eslint/parser": "^8.0.1",
-		"eslint": "^9.8.0",
-		"eslint-plugin-svelte": "^2.43.0",
-		"husky": "^9.1.4",
-		"nano-staged": "^0.8.0",
-		"prettier": "^3.3.3",
-		"prettier-plugin-svelte": "^3.2.6",
-		"svelte": "^4.2.18",
-		"svelte-check": "^3.8.5",
-		"typescript": "^5.5.4",
-		"vite": "^5.4.0"
-	},
-	"type": "module",
-	"engines": {
-		"node": ">=20"
-	},
-	"packageManager": "pnpm@9.7.0"
+  "name": "sveltekit-template",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write . && eslint . --fix",
+    "prepare": "husky",
+    "postinstall": "pnpm exec husky init",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@eslint/js": "^9.8.0",
+    "@storybook/addon-essentials": "^8.2.8",
+    "@storybook/addon-interactions": "^8.2.8",
+    "@storybook/addon-links": "^8.2.8",
+    "@storybook/addon-svelte-csf": "^4.1.5",
+    "@storybook/blocks": "^8.2.8",
+    "@storybook/svelte": "^8.2.8",
+    "@storybook/sveltekit": "^8.2.8",
+    "@storybook/test": "^8.2.8",
+    "@sveltejs/adapter-auto": "^3.2.2",
+    "@sveltejs/kit": "^2.5.20",
+    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "eslint": "^9.8.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-svelte": "^2.43.0",
+    "husky": "^9.1.4",
+    "nano-staged": "^0.8.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-svelte": "^3.2.6",
+    "storybook": "^8.2.8",
+    "svelte": "^4.2.18",
+    "svelte-check": "^3.8.5",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.7.0",
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
 }
