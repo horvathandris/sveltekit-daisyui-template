@@ -11,7 +11,6 @@
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write . && eslint . --fix",
     "prepare": "husky",
-    "postinstall": "pnpm exec husky init",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
