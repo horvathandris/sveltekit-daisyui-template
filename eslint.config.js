@@ -12,10 +12,10 @@ export default [
   },
   js.configs.recommended,
   ...ts.configs.recommended,
-  ...sveltePlugin.configs["flat/recommended"],
-  ...sveltePlugin.configs["flat/prettier"],
   ...storybookPlugin.configs["flat/recommended"],
   ...tailwindPlugin.configs["flat/recommended"],
+  ...sveltePlugin.configs["flat/recommended"],
+  ...sveltePlugin.configs["flat/prettier"],
   {
     files: ["**/*.svelte"],
     languageOptions: {
