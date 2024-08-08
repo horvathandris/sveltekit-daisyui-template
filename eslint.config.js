@@ -1,30 +1,34 @@
-import eslintPluginSvelte from "eslint-plugin-svelte";
+import sveltePlugin from "eslint-plugin-svelte";
 import js from "@eslint/js";
-import tsEslintParser from "@typescript-eslint/parser";
+import ts from "typescript-eslint";
+import tsParser from "@typescript-eslint/parser";
 import svelteParser from "svelte-eslint-parser";
-import eslintPluginStorybook from "eslint-plugin-storybook";
+import storybookPlugin from "eslint-plugin-storybook";
+import tailwindPlugin from "eslint-plugin-tailwindcss";
 
 export default [
   {
     ignores: ["**/.svelte-kit/"],
   },
   js.configs.recommended,
-  ...eslintPluginSvelte.configs["flat/recommended"],
-  ...eslintPluginSvelte.configs["flat/prettier"],
-  ...eslintPluginStorybook.configs["flat/recommended"],
+  ...ts.configs.recommended,
+  ...sveltePlugin.configs["flat/recommended"],
+  ...sveltePlugin.configs["flat/prettier"],
+  ...storybookPlugin.configs["flat/recommended"],
+  ...tailwindPlugin.configs["flat/recommended"],
   {
     files: ["**/*.svelte"],
     languageOptions: {
       parser: svelteParser,
       parserOptions: {
-        parser: tsEslintParser,
+        parser: tsParser,
       },
     },
   },
   {
     files: ["**/*.ts", "**/*.tsx"],
     languageOptions: {
-      parser: tsEslintParser,
+      parser: tsParser,
     },
   },
 ];
