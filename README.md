@@ -1,30 +1,13 @@
-# create-svelte
+# sveltekit-daisyui-template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This is a SvelteKit template with DaisyUI, a Tailwind CSS component library.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-pnpm dev
-
-# or start the server and open the app in a new browser tab
-pnpm dev
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-pnpm build
-```
-
-You can preview the production build with `pnpm preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This template includes:
+- [SvelteKit](https://kit.svelte.dev/) with [TypeScript](https://www.typescriptlang.org/)
+- [DaisyUI](https://daisyui.com/), a [Tailwind CSS](https://tailwindcss.com/) component library
+- [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) for code linting and formatting
+- [Storybook](https://storybook.js.org/) for component development
+- [Husky](https://typicode.github.io/husky/) and [nano-staged](https://github.com/usmanyunusov/nano-staged) for pre-commit hooks
+- [GitHub Actions](https://docs.github.com/en/actions) workflow for build, lint and test
