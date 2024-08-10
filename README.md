@@ -5,6 +5,7 @@ This is a SvelteKit template with DaisyUI, a Tailwind CSS component library.
 ## Features
 
 This template includes:
+
 - [SvelteKit](https://kit.svelte.dev/) with [TypeScript](https://www.typescriptlang.org/)
 - [DaisyUI](https://daisyui.com/), a [Tailwind CSS](https://tailwindcss.com/) component library
 - [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) for code linting and formatting
