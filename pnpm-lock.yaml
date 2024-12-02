@@ -27,8 +27,8 @@ importers:
         specifier: ^8.4.2
         version: 8.4.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.6(prettier@3.3.3))
       '@storybook/svelte':
-        specifier: ^8.4.2
-        version: 8.4.2(storybook@8.4.6(prettier@3.3.3))(svelte@5.1.14)
+        specifier: ^8.4.6
+        version: 8.4.6(storybook@8.4.6(prettier@3.3.3))(svelte@5.1.14)
       '@storybook/sveltekit':
         specifier: ^8.4.2
         version: 8.4.2(@babel/core@7.25.2)(@sveltejs/vite-plugin-svelte@4.0.2(svelte@5.1.14)(vite@5.4.11(@types/node@22.1.0)))(postcss-load-config@4.0.2(postcss@8.4.48))(postcss@8.4.48)(storybook@8.4.6(prettier@3.3.3))(svelte@5.1.14)(vite@5.4.11(@types/node@22.1.0))
@@ -639,6 +639,11 @@ packages:
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
+  '@storybook/components@8.4.6':
+    resolution: {integrity: sha512-9tKSJJCyFT5RZMRGyozTBJkr9C9Yfk1nuOE9XbDEE1Z+3/IypKR9+iwc5mfNBStDNY+rxtYWNLKBb5GPR2yhzA==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+
   '@storybook/core@8.4.6':
     resolution: {integrity: sha512-WeojVtHy0/t50tzw/15S+DLzKsj8BN9yWdo3vJMvm+nflLFvfq1XvD9WGOWeaFp8E/o3AP+4HprXG0r42KEJtA==}
     peerDependencies:
@@ -675,8 +680,18 @@ packages:
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
+  '@storybook/manager-api@8.4.6':
+    resolution: {integrity: sha512-TsXlQ5m5rTl2KNT9icPFyy822AqXrx1QplZBt/L7cFn7SpqQKDeSta21FH7MG0piAvzOweXebVSqKngJ6cCWWQ==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+
   '@storybook/preview-api@8.4.2':
     resolution: {integrity: sha512-5X/xvIvDPaWJKUBCo5zVeBbbjkhnwcI2KPkuOgrHVRRhuQ5WqD0RYxVtOOFNyQXme7g0nNl5RFNgvT7qv9qGeg==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+
+  '@storybook/preview-api@8.4.6':
+    resolution: {integrity: sha512-LbD+lR1FGvWaJBXteVx5xdgs1x1D7tyidBg2CsW2ex+cP0iJ176JgjPfutZxlWOfQnhfRYNnJ3WKoCIfxFOTKA==}
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
@@ -703,6 +718,13 @@ packages:
       storybook: ^8.4.2
       svelte: ^4.0.0 || ^5.0.0
 
+  '@storybook/svelte@8.4.6':
+    resolution: {integrity: sha512-rqMpAtcTIVNcKtYnSvdzvTLcDd1QwNjq2opFjKYNmmycqdMH8SFsGHtVx159jJRxsXZ3N6i8cXOvmRvDfO5uUA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      storybook: ^8.4.6
+      svelte: ^4.0.0 || ^5.0.0
+
   '@storybook/sveltekit@8.4.2':
     resolution: {integrity: sha512-hWkVazAnVicmTZJFzVwe23PNExAicjCVLZwbTaCsGs0PrlGwgAGk2lq16BxGX94ms1z4hCHbFAijcWtjLPfDBQ==}
     engines: {node: '>=18.0.0'}
@@ -718,6 +740,11 @@ packages:
 
   '@storybook/theming@8.4.2':
     resolution: {integrity: sha512-9j4fnu5LcV+qSs1rdwf61Bt14lms0T1LOZkHxGNcS1c1oH+cPS+sxECh2lxtni+mvOAHUlBs9pKhVZzRPdWpvg==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+
+  '@storybook/theming@8.4.6':
+    resolution: {integrity: sha512-q7vDPN/mgj7cXIVQ9R1/V75hrzNgKkm2G0LjMo57//9/djQ+7LxvBsR1iScbFIRSEqppvMiBFzkts+2uXidySA==}
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
@@ -3014,6 +3041,10 @@ snapshots:
     dependencies:
       storybook: 8.4.6(prettier@3.3.3)
 
+  '@storybook/components@8.4.6(storybook@8.4.6(prettier@3.3.3))':
+    dependencies:
+      storybook: 8.4.6(prettier@3.3.3)
+
   '@storybook/core@8.4.6(prettier@3.3.3)':
     dependencies:
       '@storybook/csf': 0.1.11
@@ -3060,7 +3091,15 @@ snapshots:
     dependencies:
       storybook: 8.4.6(prettier@3.3.3)
 
+  '@storybook/manager-api@8.4.6(storybook@8.4.6(prettier@3.3.3))':
+    dependencies:
+      storybook: 8.4.6(prettier@3.3.3)
+
   '@storybook/preview-api@8.4.2(storybook@8.4.6(prettier@3.3.3))':
+    dependencies:
+      storybook: 8.4.6(prettier@3.3.3)
+
+  '@storybook/preview-api@8.4.6(storybook@8.4.6(prettier@3.3.3))':
     dependencies:
       storybook: 8.4.6(prettier@3.3.3)
 
@@ -3111,6 +3150,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@storybook/svelte@8.4.6(storybook@8.4.6(prettier@3.3.3))(svelte@5.1.14)':
+    dependencies:
+      '@storybook/components': 8.4.6(storybook@8.4.6(prettier@3.3.3))
+      '@storybook/global': 5.0.0
+      '@storybook/manager-api': 8.4.6(storybook@8.4.6(prettier@3.3.3))
+      '@storybook/preview-api': 8.4.6(storybook@8.4.6(prettier@3.3.3))
+      '@storybook/theming': 8.4.6(storybook@8.4.6(prettier@3.3.3))
+      storybook: 8.4.6(prettier@3.3.3)
+      svelte: 5.1.14
+      sveltedoc-parser: 4.2.1
+      ts-dedent: 2.2.0
+      type-fest: 2.19.0
+    transitivePeerDependencies:
+      - supports-color
+
   '@storybook/sveltekit@8.4.2(@babel/core@7.25.2)(@sveltejs/vite-plugin-svelte@4.0.2(svelte@5.1.14)(vite@5.4.11(@types/node@22.1.0)))(postcss-load-config@4.0.2(postcss@8.4.48))(postcss@8.4.48)(storybook@8.4.6(prettier@3.3.3))(svelte@5.1.14)(vite@5.4.11(@types/node@22.1.0))':
     dependencies:
       '@storybook/addon-actions': 8.4.2(storybook@8.4.6(prettier@3.3.3))
@@ -3146,6 +3200,10 @@ snapshots:
       storybook: 8.4.6(prettier@3.3.3)
 
   '@storybook/theming@8.4.2(storybook@8.4.6(prettier@3.3.3))':
+    dependencies:
+      storybook: 8.4.6(prettier@3.3.3)
+
+  '@storybook/theming@8.4.6(storybook@8.4.6(prettier@3.3.3))':
     dependencies:
       storybook: 8.4.6(prettier@3.3.3)
 
